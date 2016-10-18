@@ -27,5 +27,20 @@
 
   - measure: count
     type: count
-    drill_fields: [id, users.id, users.first_name, users.last_name, order_items.count]
+    drill_fields: other_set*
 
+  sets: 
+    detail: 
+      - id
+      - created_date
+      - status
+      - traffic_source
+      
+    other_set:
+      - id
+      - order_items.count
+      
+      
+      
+      
+      
